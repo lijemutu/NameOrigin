@@ -3,7 +3,11 @@ class Config(object):
 
 
 class ProdConfig(Config):
-    pass
+    DEBUG = False
+    SQLALCHEMY_DATABASE_URI = (
+        "postgresql+psycopg2://test:password@postgres:5432/mex_polit_db"
+    )
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 
 class DevConfig(Config):
