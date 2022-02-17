@@ -1,0 +1,31 @@
+version: "3.8"
+services:
+  app:
+    build:
+      context: .
+    links:
+      - postgres
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./:/app
+    environment: # TODO secrets
+      - APIAPP_ENV=main.py
+      - API_KEY_NAMES=900670bcbd8a496c9bdda4c19670b110
+    depends_on:
+      - postgres
+  postgres:
+    image: postgres:14.1-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER=test
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=mex_polit_db
+    ports:
+      - '5432:5432'
+    volumes: 
+      - postgres:/var/lib/postgresql/data
+      - ./database/init.sql/:/docker-entrypoint-initdb.d/create_tables.sql
+volumes:
+  postgres:
+    driver: local

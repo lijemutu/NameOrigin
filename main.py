@@ -1,14 +1,18 @@
 from flask import Flask
-from config import DevConfig
-
-app = Flask(__name__)
-app.config.from_object(DevConfig)
+from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate
 
 
-@app.route("/")
-def home():
-    return "<h1>Hello World!</h1>"
+db = SQLAlchemy()
+migrate = Migrate()
 
 
-if __name__ == "__main__":
-    app.run()
+def create_app(object_name):
+    from NameApi.controllers import NameApi_blueprint
+
+    app = Flask(__name__)
+    app.config.from_object(object_name)
+    db.init_app(app)
+    migrate.init_app(app, db)
+    app.register_blueprint(NameApi_blueprint)
+    return app
