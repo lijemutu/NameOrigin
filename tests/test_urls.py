@@ -14,9 +14,14 @@ class TestURLs(unittest.TestCase):
     def tearDown(self):
         db.session.remove()
 
-    def test_root_redirect(self):
+    def test_name_400_no_params(self):
         """Tests if the root URL gives a 400 when no parameters are send"""
         result = self.client.get("/NameApi/name")
+        assert result.status_code == 400
+
+    def test_partialname_400_no_params(self):
+        """Tests if the root URL gives a 400 when no parameters are send"""
+        result = self.client.get("/NameApi/partialname")
         assert result.status_code == 400
 
 

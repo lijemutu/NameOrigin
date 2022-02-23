@@ -35,7 +35,7 @@ def NameNationality():
     return nationalities, 200
 
 
-@NameApi_blueprint.route("/api/partialname", methods=["GET"])
+@NameApi_blueprint.route("/partialname", methods=["GET"])
 def PartialNameLocation():
     args = request.args
 
