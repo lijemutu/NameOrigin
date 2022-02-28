@@ -23,3 +23,8 @@ class TestURLs(unittest.TestCase):
     def test_parsergober(self):
         with open("tests/test_request.html.txt", "r") as testData:
             assert ParserGoberInfo(testData.read()) is not None
+
+    def test_request_n_parse(self):
+        html_text = RequestGoberInfo()
+        parsed_text = ParserGoberInfo(html_text)
+        assert parsed_text is not None

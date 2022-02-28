@@ -2,7 +2,7 @@ import datetime
 import os
 
 import requests
-from . import db
+from main import db
 
 
 class FullNameModel(db.Model):
