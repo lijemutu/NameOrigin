@@ -41,6 +41,7 @@ def SaveGoberInfo(gober_list_dict: list):
         goberModel = models.GobernadoresMexicoModel(gober["estado"],
                                                     gober["nombre"])
         estadoModel = models.EstadosMexicoModel(estado=gober["estado"])
+        goberModel.estado.append(estadoModel)
         db.session.add(goberModel)
         db.session.add(estadoModel)
     db.session.commit()

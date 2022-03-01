@@ -6,8 +6,9 @@ class EstadosMexicoModel(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     estado = db.Column(db.String(128), nullable=False)
-    gobernador = db.relationship("GobernadoresMexicoModel",
-                                 backref="estadosmextb")
+    gobernador = db.Column(
+        db.Integer, db.ForeignKey("gobernadoresmextb.id")
+    )
 
     def __init__(self, estado: str) -> None:
         self.estado = estado
@@ -17,7 +18,9 @@ class GobernadoresMexicoModel(db.Model):
     __tablename__ = "gobernadoresmextb"
 
     id = db.Column(db.Integer, primary_key=True)
-    estado_id = db.Column(db.Integer, db.ForeignKey("estadosmextb.id"))
+    estado = db.relationship(
+        "EstadosMexicoModel", backref="GobernadoresMexicoModel", lazy=True
+    )
     titulo = db.Column(db.String(128))
     nombres = db.Column(db.String(128), nullable=False)
     a_paterno = db.Column(db.String(128), nullable=False)

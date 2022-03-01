@@ -208,6 +208,7 @@ class NamesApi:
             return {
                 "forename": foundUser.firstName,
                 "surname": foundUser.lastName,
+                "secondsurname": foundUser.secondLastName,
                 "countries": [
                     {
                         "jurisdiction": foundUser.foundCountry1,

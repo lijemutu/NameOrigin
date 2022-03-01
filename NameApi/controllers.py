@@ -66,3 +66,12 @@ def PartialNameLocation():
             return "Bad request", 400
 
     return locations, 200
+
+
+def NameNationalityInternal(firstname: str, surname: str,
+                            secondsurname: str = ""):
+
+    nameObject = NamesApi(firstname, surname, secondLastName=secondsurname)
+
+    nationalities = nameObject.requestFullName()
+    return nationalities
