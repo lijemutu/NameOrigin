@@ -1,6 +1,8 @@
 import requests
 from sqlalchemy import null
 from bs4 import BeautifulSoup
+from main import db
+from . import models
 
 GOBER_URL = "https://www.conago.org.mx/gobernadores"
 HEADERS = {
@@ -19,7 +21,7 @@ def RequestGoberInfo() -> str:
     return r.text
 
 
-def ParserGoberInfo(html_text):
+def ParserGoberInfo(html_text: str):
     soup = BeautifulSoup(html_text, "lxml")
     listGober = []
     for gober in soup.find_all("div", {"class": "row mrqo"}):
@@ -32,3 +34,13 @@ def ParserGoberInfo(html_text):
         )
         listGober.append({"estado": estado, "nombre": nombre})
     return listGober
+
+
+def SaveGoberInfo(gober_list_dict: list):
+    for gober in gober_list_dict:
+        goberModel = models.GobernadoresMexicoModel(gober["estado"],
+                                                    gober["nombre"])
+        estadoModel = models.EstadosMexicoModel(estado=gober["estado"])
+        db.session.add(goberModel)
+        db.session.add(estadoModel)
+    db.session.commit()
