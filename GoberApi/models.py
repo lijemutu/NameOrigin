@@ -7,7 +7,7 @@ class EstadosMexicoModel(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     estado = db.Column(db.String(128), nullable=False)
     gobernador = db.Column(
-        db.Integer, db.ForeignKey("gobernadoresmextb.id")
+        db.Integer, db.ForeignKey("gobernadoresmextb.id", ondelete="SET NULL")
     )
 
     def __init__(self, estado: str) -> None:
