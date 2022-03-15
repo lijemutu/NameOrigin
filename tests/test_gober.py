@@ -50,3 +50,8 @@ class TestURLs(unittest.TestCase):
         """Tests if the root URL gives a 200"""
         result = self.client.get("/GoberApi/addgobernors")
         assert result.status_code == 200
+
+    def test_origins(self):
+        result = self.client.get("/GoberApi/addgobernors")
+        result = self.client.get("GoberApi/origins")
+        assert result.status_code == 200

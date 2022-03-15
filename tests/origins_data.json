@@ -1,0 +1,866 @@
+{
+    "Aguascalientes": {
+        "countries": [
+            {
+                "jurisdiction": "Mexico",
+                "percent": "41.11062"
+            },
+            {
+                "jurisdiction": "Colombia",
+                "percent": "12.73224"
+            },
+            {
+                "jurisdiction": "Argentina",
+                "percent": "9.6162"
+            },
+            {
+                "jurisdiction": "United States",
+                "percent": "5.65569"
+            },
+            {
+                "jurisdiction": "Guatemala",
+                "percent": "5.10086"
+            }
+        ],
+        "forename": "Martín",
+        "secondsurname": "Sandoval",
+        "surname": "Orozco"
+    },
+    "Baja California": {
+        "countries": [
+            {
+                "jurisdiction": "Brazil",
+                "percent": "24.67411"
+            },
+            {
+                "jurisdiction": "Mexico",
+                "percent": "24.09108"
+            },
+            {
+                "jurisdiction": "Spain",
+                "percent": "17.65029"
+            },
+            {
+                "jurisdiction": "United States",
+                "percent": "11.69903"
+            },
+            {
+                "jurisdiction": "Portugal",
+                "percent": "8.69589"
+            }
+        ],
+        "forename": "Marina del Pilar",
+        "secondsurname": "Olmeda",
+        "surname": "Ávila"
+    },
+    "Baja California Sur": {
+        "countries": [
+            {
+                "jurisdiction": "Mexico",
+                "percent": "44.24506"
+            },
+            {
+                "jurisdiction": "Spain",
+                "percent": "12.88431"
+            },
+            {
+                "jurisdiction": "Colombia",
+                "percent": "6.05445"
+            },
+            {
+                "jurisdiction": "Brazil",
+                "percent": "5.06786"
+            },
+            {
+                "jurisdiction": "United States",
+                "percent": "4.43526"
+            }
+        ],
+        "forename": "Víctor Manuel",
+        "secondsurname": "Cosío",
+        "surname": "Castro"
+    },
+    "Campeche": {
+        "countries": [
+            {
+                "jurisdiction": "Myanmar",
+                "percent": "27.9469"
+            },
+            {
+                "jurisdiction": "Hungary",
+                "percent": "18.87223"
+            },
+            {
+                "jurisdiction": "Cambodia",
+                "percent": "14.93481"
+            },
+            {
+                "jurisdiction": "Spain",
+                "percent": "10.27894"
+            },
+            {
+                "jurisdiction": "Mexico",
+                "percent": "5.28121"
+            }
+        ],
+        "forename": "Layda Elena Sansores",
+        "secondsurname": "Román",
+        "surname": "San"
+    },
+    "Chiapas": {
+        "countries": [
+            {
+                "jurisdiction": "Mexico",
+                "percent": "36.65323"
+            },
+            {
+                "jurisdiction": "Spain",
+                "percent": "17.40044"
+            },
+            {
+                "jurisdiction": "Venezuela",
+                "percent": "15.10422"
+            },
+            {
+                "jurisdiction": "Philippines",
+                "percent": "5.8723"
+            },
+            {
+                "jurisdiction": "United States",
+                "percent": "5.61821"
+            }
+        ],
+        "forename": "Rutilio Cruz",
+        "secondsurname": "Cadenas",
+        "surname": "Escandón"
+    },
+    "Chihuahua": {
+        "countries": [
+            {
+                "jurisdiction": "Mexico",
+                "percent": "34.04697"
+            },
+            {
+                "jurisdiction": "Spain",
+                "percent": "17.95299"
+            },
+            {
+                "jurisdiction": "Brazil",
+                "percent": "14.79474"
+            },
+            {
+                "jurisdiction": "Argentina",
+                "percent": "4.19322"
+            },
+            {
+                "jurisdiction": "Peru",
+                "percent": "3.76074"
+            }
+        ],
+        "forename": "María Eugenia",
+        "secondsurname": "Galván",
+        "surname": "Campos"
+    },
+    "Ciudad de México": {
+        "countries": [
+            {
+                "jurisdiction": "United States",
+                "percent": "25.12323"
+            },
+            {
+                "jurisdiction": "Colombia",
+                "percent": "10.06995"
+            },
+            {
+                "jurisdiction": "Mexico",
+                "percent": "9.61119"
+            },
+            {
+                "jurisdiction": "Israel",
+                "percent": "9.51092"
+            },
+            {
+                "jurisdiction": "Spain",
+                "percent": "8.12008"
+            }
+        ],
+        "forename": "Claudia",
+        "secondsurname": "Pardo",
+        "surname": "Sheinbaum"
+    },
+    "Coahuila": {
+        "countries": [
+            {
+                "jurisdiction": "Chile",
+                "percent": "30.62476"
+            },
+            {
+                "jurisdiction": "Mexico",
+                "percent": "25.24329"
+            },
+            {
+                "jurisdiction": "Spain",
+                "percent": "12.56772"
+            },
+            {
+                "jurisdiction": "Argentina",
+                "percent": "9.12331"
+            },
+            {
+                "jurisdiction": "Paraguay",
+                "percent": "5.69828"
+            }
+        ],
+        "forename": "Miguel Ángel",
+        "secondsurname": "Solís",
+        "surname": "Riquelme"
+    },
+    "Colima": {
+        "countries": [
+            {
+                "jurisdiction": "Brazil",
+                "percent": "29.09897"
+            },
+            {
+                "jurisdiction": "Spain",
+                "percent": "17.11439"
+            },
+            {
+                "jurisdiction": "Dominican Republic",
+                "percent": "10.64442"
+            },
+            {
+                "jurisdiction": "India",
+                "percent": "8.74375"
+            },
+            {
+                "jurisdiction": "Mexico",
+                "percent": "8.30697"
+            }
+        ],
+        "forename": "Indira",
+        "secondsurname": "Silva",
+        "surname": "Vizcaíno"
+    },
+    "Durango": {
+        "countries": [
+            {
+                "jurisdiction": "Mexico",
+                "percent": "56.31134"
+            },
+            {
+                "jurisdiction": "United States",
+                "percent": "11.53306"
+            },
+            {
+                "jurisdiction": "Colombia",
+                "percent": "5.40601"
+            },
+            {
+                "jurisdiction": "Peru",
+                "percent": "3.18245"
+            },
+            {
+                "jurisdiction": "Argentina",
+                "percent": "3.15548"
+            }
+        ],
+        "forename": "José Rosas",
+        "secondsurname": "Torres",
+        "surname": "Aispuro"
+    },
+    "Guanajuato": {
+        "countries": [
+            {
+                "jurisdiction": "Mexico",
+                "percent": "24.38942"
+            },
+            {
+                "jurisdiction": "Spain",
+                "percent": "20.75027"
+            },
+            {
+                "jurisdiction": "Colombia",
+                "percent": "10.65472"
+            },
+            {
+                "jurisdiction": "Dominican Republic",
+                "percent": "5.851"
+            },
+            {
+                "jurisdiction": "Argentina",
+                "percent": "5.02695"
+            }
+        ],
+        "forename": "Diego Sinhue",
+        "secondsurname": "Vallejo",
+        "surname": "Rodríguez"
+    },
+    "Guerrero": {
+        "countries": [
+            {
+                "jurisdiction": "Mexico",
+                "percent": "24.16322"
+            },
+            {
+                "jurisdiction": "Colombia",
+                "percent": "12.17467"
+            },
+            {
+                "jurisdiction": "Honduras",
+                "percent": "9.54326"
+            },
+            {
+                "jurisdiction": "United States",
+                "percent": "7.41653"
+            },
+            {
+                "jurisdiction": "Philippines",
+                "percent": "7.02694"
+            }
+        ],
+        "forename": "Evelyn Cecia",
+        "secondsurname": "Pineda",
+        "surname": "Salgado"
+    },
+    "Hidalgo": {
+        "countries": [
+            {
+                "jurisdiction": "Iraq",
+                "percent": "19.93337"
+            },
+            {
+                "jurisdiction": "Colombia",
+                "percent": "8.71766"
+            },
+            {
+                "jurisdiction": "Egypt",
+                "percent": "8.49402"
+            },
+            {
+                "jurisdiction": "Mexico",
+                "percent": "7.86042"
+            },
+            {
+                "jurisdiction": "Brazil",
+                "percent": "6.40187"
+            }
+        ],
+        "forename": "Omar",
+        "secondsurname": "Meneses",
+        "surname": "Fayad"
+    },
+    "Jalisco": {
+        "countries": [
+            {
+                "jurisdiction": "Mexico",
+                "percent": "30.88753"
+            },
+            {
+                "jurisdiction": "Guatemala",
+                "percent": "10.74036"
+            },
+            {
+                "jurisdiction": "Spain",
+                "percent": "7.79158"
+            },
+            {
+                "jurisdiction": "United States",
+                "percent": "5.76025"
+            },
+            {
+                "jurisdiction": "Argentina",
+                "percent": "5.26928"
+            }
+        ],
+        "forename": "Enrique",
+        "secondsurname": "Ramírez",
+        "surname": "Alfaro"
+    },
+    "Michoacán": {
+        "countries": [
+            {
+                "jurisdiction": "Mexico",
+                "percent": "44.95727"
+            },
+            {
+                "jurisdiction": "Guatemala",
+                "percent": "11.90755"
+            },
+            {
+                "jurisdiction": "United States",
+                "percent": "7.65812"
+            },
+            {
+                "jurisdiction": "Philippines",
+                "percent": "4.67527"
+            },
+            {
+                "jurisdiction": "Spain",
+                "percent": "4.54952"
+            }
+        ],
+        "forename": "Alfredo",
+        "secondsurname": "Bedolla",
+        "surname": "Ramírez"
+    },
+    "Morelos": {
+        "countries": [
+            {
+                "jurisdiction": "Mexico",
+                "percent": "30.34508"
+            },
+            {
+                "jurisdiction": "Venezuela",
+                "percent": "10.46172"
+            },
+            {
+                "jurisdiction": "Spain",
+                "percent": "10.0572"
+            },
+            {
+                "jurisdiction": "Argentina",
+                "percent": "9.26469"
+            },
+            {
+                "jurisdiction": "Colombia",
+                "percent": "7.00274"
+            }
+        ],
+        "forename": "Cuauhtémoc",
+        "secondsurname": "Bravo",
+        "surname": "Blanco"
+    },
+    "México": {
+        "countries": [
+            {
+                "jurisdiction": "Colombia",
+                "percent": "30.93198"
+            },
+            {
+                "jurisdiction": "Peru",
+                "percent": "9.89278"
+            },
+            {
+                "jurisdiction": "Argentina",
+                "percent": "8.64831"
+            },
+            {
+                "jurisdiction": "Philippines",
+                "percent": "8.61969"
+            },
+            {
+                "jurisdiction": "Mexico",
+                "percent": "7.04436"
+            }
+        ],
+        "forename": "Alfredo Del",
+        "secondsurname": "Maza",
+        "surname": "Mazo"
+    },
+    "Nayarit": {
+        "countries": [
+            {
+                "jurisdiction": "Colombia",
+                "percent": "22.79885"
+            },
+            {
+                "jurisdiction": "Mexico",
+                "percent": "19.4177"
+            },
+            {
+                "jurisdiction": "Venezuela",
+                "percent": "11.82185"
+            },
+            {
+                "jurisdiction": "Spain",
+                "percent": "9.42951"
+            },
+            {
+                "jurisdiction": "United States",
+                "percent": "6.58677"
+            }
+        ],
+        "forename": "Miguel Ángel",
+        "secondsurname": "Quintero",
+        "surname": "Navarro"
+    },
+    "Nuevo León": {
+        "countries": [
+            {
+                "jurisdiction": "Spain",
+                "percent": "22.58732"
+            },
+            {
+                "jurisdiction": "Mexico",
+                "percent": "20.26612"
+            },
+            {
+                "jurisdiction": "Chile",
+                "percent": "12.92871"
+            },
+            {
+                "jurisdiction": "Portugal",
+                "percent": "11.19626"
+            },
+            {
+                "jurisdiction": "Guatemala",
+                "percent": "5.81918"
+            }
+        ],
+        "forename": "Samuel Alejandro",
+        "secondsurname": "Sepúlveda",
+        "surname": "García"
+    },
+    "Oaxaca": {
+        "countries": [
+            {
+                "jurisdiction": "Mexico",
+                "percent": "17.21648"
+            },
+            {
+                "jurisdiction": "India",
+                "percent": "15.35148"
+            },
+            {
+                "jurisdiction": "Turkey",
+                "percent": "14.63804"
+            },
+            {
+                "jurisdiction": "United States",
+                "percent": "12.1001"
+            },
+            {
+                "jurisdiction": "Bolivia",
+                "percent": "7.47986"
+            }
+        ],
+        "forename": "Alejandro Ismael",
+        "secondsurname": "Hinojosa",
+        "surname": "Murat"
+    },
+    "Puebla": {
+        "countries": [
+            {
+                "jurisdiction": "Brazil",
+                "percent": "43.60138"
+            },
+            {
+                "jurisdiction": "Mexico",
+                "percent": "33.83224"
+            },
+            {
+                "jurisdiction": "United States",
+                "percent": "6.25524"
+            },
+            {
+                "jurisdiction": "Peru",
+                "percent": "3.26129"
+            },
+            {
+                "jurisdiction": "Chile",
+                "percent": "2.56654"
+            }
+        ],
+        "forename": "Luis Miguel Gerónimo",
+        "secondsurname": "Huerta",
+        "surname": "Barbosa"
+    },
+    "Querétaro": {
+        "countries": [
+            {
+                "jurisdiction": "Mexico",
+                "percent": "15.86224"
+            },
+            {
+                "jurisdiction": "India",
+                "percent": "15.39507"
+            },
+            {
+                "jurisdiction": "Ethiopia",
+                "percent": "11.84035"
+            },
+            {
+                "jurisdiction": "Spain",
+                "percent": "10.67731"
+            },
+            {
+                "jurisdiction": "Brazil",
+                "percent": "9.89765"
+            }
+        ],
+        "forename": "Mauricio",
+        "secondsurname": "González",
+        "surname": "Kuri"
+    },
+    "Quintana Roo": {
+        "countries": [
+            {
+                "jurisdiction": "Dominican Republic",
+                "percent": "29.9455"
+            },
+            {
+                "jurisdiction": "Spain",
+                "percent": "25.64674"
+            },
+            {
+                "jurisdiction": "Mexico",
+                "percent": "17.13779"
+            },
+            {
+                "jurisdiction": "Cuba",
+                "percent": "4.42315"
+            },
+            {
+                "jurisdiction": "Argentina",
+                "percent": "3.33772"
+            }
+        ],
+        "forename": "Carlos Manuel",
+        "secondsurname": "González",
+        "surname": "Joaquín"
+    },
+    "San Luis Potosí": {
+        "countries": [
+            {
+                "jurisdiction": "Colombia",
+                "percent": "23.34324"
+            },
+            {
+                "jurisdiction": "Mexico",
+                "percent": "18.14535"
+            },
+            {
+                "jurisdiction": "Guatemala",
+                "percent": "7.5566"
+            },
+            {
+                "jurisdiction": "Spain",
+                "percent": "7.51059"
+            },
+            {
+                "jurisdiction": "United States",
+                "percent": "6.75933"
+            }
+        ],
+        "forename": "José Ricardo",
+        "secondsurname": "Cardona",
+        "surname": "Gallardo"
+    },
+    "Sinaloa": {
+        "countries": [
+            {
+                "jurisdiction": "Spain",
+                "percent": "26.33343"
+            },
+            {
+                "jurisdiction": "Mexico",
+                "percent": "16.55118"
+            },
+            {
+                "jurisdiction": "Brazil",
+                "percent": "15.37016"
+            },
+            {
+                "jurisdiction": "Argentina",
+                "percent": "7.61553"
+            },
+            {
+                "jurisdiction": "Chile",
+                "percent": "4.33104"
+            }
+        ],
+        "forename": "Rubén",
+        "secondsurname": "Moya",
+        "surname": "Rocha"
+    },
+    "Sonora": {
+        "countries": [
+            {
+                "jurisdiction": "Mexico",
+                "percent": "50.073"
+            },
+            {
+                "jurisdiction": "United States",
+                "percent": "15.48656"
+            },
+            {
+                "jurisdiction": "Colombia",
+                "percent": "13.47095"
+            },
+            {
+                "jurisdiction": "Bolivia",
+                "percent": "7.01491"
+            },
+            {
+                "jurisdiction": "Philippines",
+                "percent": "4.75763"
+            }
+        ],
+        "forename": "Francisco Alfonso",
+        "secondsurname": "Montaño",
+        "surname": "Durazo"
+    },
+    "Tabasco": {
+        "countries": [
+            {
+                "jurisdiction": "Mexico",
+                "percent": "24.09186"
+            },
+            {
+                "jurisdiction": "Brazil",
+                "percent": "15.1162"
+            },
+            {
+                "jurisdiction": "Spain",
+                "percent": "14.54158"
+            },
+            {
+                "jurisdiction": "Peru",
+                "percent": "8.9834"
+            },
+            {
+                "jurisdiction": "United States",
+                "percent": "5.5117"
+            }
+        ],
+        "forename": "Carlos Manuel",
+        "secondsurname": "Campos",
+        "surname": "Merino"
+    },
+    "Tamaulipas": {
+        "countries": [
+            {
+                "jurisdiction": "India",
+                "percent": "53.5732"
+            },
+            {
+                "jurisdiction": "Bolivia",
+                "percent": "16.68904"
+            },
+            {
+                "jurisdiction": "Ecuador",
+                "percent": "6.65677"
+            },
+            {
+                "jurisdiction": "Mexico",
+                "percent": "5.25792"
+            },
+            {
+                "jurisdiction": "Argentina",
+                "percent": "3.63495"
+            }
+        ],
+        "forename": "Francisco Javier García Cabeza",
+        "secondsurname": "Vaca",
+        "surname": "de"
+    },
+    "Tlaxcala": {
+        "countries": [
+            {
+                "jurisdiction": "Mexico",
+                "percent": "38.20818"
+            },
+            {
+                "jurisdiction": "Spain",
+                "percent": "11.43145"
+            },
+            {
+                "jurisdiction": "United States",
+                "percent": "8.25694"
+            },
+            {
+                "jurisdiction": "Argentina",
+                "percent": "6.43528"
+            },
+            {
+                "jurisdiction": "Bolivia",
+                "percent": "4.35294"
+            }
+        ],
+        "forename": "Lorena",
+        "secondsurname": "Cisneros",
+        "surname": "Cuéllar"
+    },
+    "Veracruz": {
+        "countries": [
+            {
+                "jurisdiction": "Mexico",
+                "percent": "42.8023"
+            },
+            {
+                "jurisdiction": "Spain",
+                "percent": "28.82121"
+            },
+            {
+                "jurisdiction": "Guatemala",
+                "percent": "5.95015"
+            },
+            {
+                "jurisdiction": "Dominican Republic",
+                "percent": "5.54368"
+            },
+            {
+                "jurisdiction": "Panama",
+                "percent": "1.70702"
+            }
+        ],
+        "forename": "Cuitláhuac",
+        "secondsurname": "Jiménez",
+        "surname": "García"
+    },
+    "Yucatán": {
+        "countries": [
+            {
+                "jurisdiction": "Philippines",
+                "percent": "21.43696"
+            },
+            {
+                "jurisdiction": "Spain",
+                "percent": "20.89961"
+            },
+            {
+                "jurisdiction": "Mexico",
+                "percent": "16.6488"
+            },
+            {
+                "jurisdiction": "Brazil",
+                "percent": "6.23051"
+            },
+            {
+                "jurisdiction": "United States",
+                "percent": "5.5032"
+            }
+        ],
+        "forename": "Mauricio",
+        "secondsurname": "Dosal",
+        "surname": "Vila"
+    },
+    "Zacatecas": {
+        "countries": [
+            {
+                "jurisdiction": "Mexico",
+                "percent": "21.39571"
+            },
+            {
+                "jurisdiction": "Brazil",
+                "percent": "17.14806"
+            },
+            {
+                "jurisdiction": "United States",
+                "percent": "16.82844"
+            },
+            {
+                "jurisdiction": "Spain",
+                "percent": "8.58373"
+            },
+            {
+                "jurisdiction": "Portugal",
+                "percent": "5.96953"
+            }
+        ],
+        "forename": "David",
+        "secondsurname": "Ávila",
+        "surname": "Monreal"
+    }
+}
