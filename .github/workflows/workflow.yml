@@ -47,7 +47,7 @@ jobs:
           # Note: tags has to be all lower-case
           tags: |
             erloto/mex-polit:latest 
-            ghcr.io/erloto/nameorigin/simple:latest
+            ghcr.io/erloto/nameorigin:latest
           # build on feature branches, push only on main branch
           push: true
 
