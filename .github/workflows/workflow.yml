@@ -47,7 +47,8 @@ jobs:
           # Note: tags has to be all lower-case
           tags: |
             erloto/mex-polit:latest 
-            ghcr.io/lijemutu/nameorigin:latest
+            ghcr.io/${{ github.repository }}:latest
+            ghcr.io/${{ github.repository }}:${{ github.sha }}
           # build on feature branches, push only on main branch
           push: true
 
