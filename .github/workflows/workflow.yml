@@ -46,7 +46,7 @@ jobs:
           context: .
           # Note: tags has to be all lower-case
           tags: |
-            erloto/nameorigin:latest 
+            erloto/mex-polit:latest 
             ghcr.io/erloto/nameorigin/simple:latest
           # build on feature branches, push only on main branch
           push: ${{ github.ref == 'refs/heads/main' }}
