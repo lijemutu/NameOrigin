@@ -46,7 +46,10 @@ def mexMap():
         ],
     )
     fig.update_geos(
-        showcountries=True, showcoastlines=True, showland=True, fitbounds="locations"
+        showcountries=True,
+        showcoastlines=True,
+        showland=True,
+        fitbounds="locations"
     )
     # Custom hover states description
     fig.update_traces(
