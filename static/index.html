@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Mapa de gobernadores</title>
+    <!-- Import Plotly (does not have to be from CDN) -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="{{
+  url_for('static', filename = 'jquery.js') }}">\x3C/script>')</script>
+    <script src="{{ url_for('static',filename='form.js') }}"></script>
+</head>
+
+<body>
+    <h1>Mapa de gobernantes de México</h1>
+    <p>Mapa presentando los estados de México con su respectivo gobernador y el órigen de cada nombre, representado con
+        colores.</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+
+                <div class="chart" id="bargraph">
+                    <script>
+                        var graphs = {{plot | safe}};
+                        Plotly.plot('bargraph', graphs, {});
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2>Origen de un nombre en particular</h2>
+    <p>Aquí puedes escribir un nombre y se te mostrará la información de un nombre en particular.</p>
+    <form action="" method="GET">
+        <label for="fn">Nombre(s):</label><br>
+        <input type="text" id="fn" name="fn"><br>
+        <label for="sn">Primer apellido:</label><br>
+        <input type="text" id="sn" name="sn"><br>
+        <label for="ssn">Segundo apellido:</label><br>
+        <input type="text" id="ssn" name="ssn"><br>
+        <input type="submit" value="Submit" onclick="getNationality();"><br>
+    </form>
+</body>
+
+</html>
