@@ -1,27 +1,27 @@
-version: "3"
+version: "3.8"
 services:
   app:
-    image: "751755577131.dkr.ecr.us-east-2.amazonaws.com/public-nameorigin"
+    build:
+      context: .
+    links:
+      - postgres
     ports:
       - "5000:5000"
     volumes:
-      - ./code
-    logging:
-      driver: awslogs
-      options:
-        awslogs-group: ecs-log-streaming
-        awslogs-region: us-east-2
-        awslogs-stream-prefix: flask-logs
+      - ./:/app
     env_file:
       - ./apikey.env
     environment: 
       - FLASK_APP=run.py
       - FLASK_ENV=production
       - FLASK_DEBUG=0
-      - APIAPP_ENV=dev
+      - APIAPP_ENV=prod
       # - API_KEY_NAMES=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa # create a apikey.env file with your api key or uncomment with your key
+    depends_on:
+      - postgres
   postgres:
     image: postgres:14.1-alpine
+    restart: always
     environment:
       - POSTGRES_USER=test
       - POSTGRES_PASSWORD=password
@@ -29,9 +29,9 @@ services:
     ports:
       - '5432:5432'
     volumes: 
-      - postgresVol:/var/lib/postgresql/data 
-      # - ./database/init.sql/:/docker-entrypoint-initdb.d/create_tables.sql
+      - postgres:/var/lib/postgresql/data
+      - ./database/init.sql/:/docker-entrypoint-initdb.d/create_tables.sql
 volumes:
-  postgresVol:
-
+  postgres:
+    driver: local
 

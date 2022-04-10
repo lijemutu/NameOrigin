@@ -1,4 +1,5 @@
 from NameApi.models import FullNameModel, PartialNameModel
+from GoberApi.models import EstadosMexicoModel, GobernadoresMexicoModel
 import os
 from main import db, migrate, create_app
 
@@ -13,5 +14,7 @@ def make_shell_context():
         db=db,
         FullNameModel=FullNameModel,
         PartialNameModel=PartialNameModel,
+        EstadosMexicoModel=EstadosMexicoModel,
+        GobernadoresMexicoModel=GobernadoresMexicoModel,
         migrate=migrate,
     )

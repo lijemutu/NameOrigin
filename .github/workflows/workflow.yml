@@ -48,6 +48,7 @@ jobs:
           tags: |
             erloto/mex-polit:latest 
             ghcr.io/lijemutu/nameorigin:latest
+            751755577131.dkr.ecr.us-east-2.amazonaws.com/public-nameorigin:latest
           # build on feature branches, push only on main branch
           push: true
 

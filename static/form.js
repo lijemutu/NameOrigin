@@ -33,7 +33,8 @@ $(document).ready(function () {
               country.percent +
               "</td>" +
               "</tr>"
-          ));
+          )
+        );
       } else {
         countries.forEach((country) =>
           $(".resultTable").append(
