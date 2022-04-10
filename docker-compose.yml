@@ -1,7 +1,7 @@
 version: "3"
 services:
   app:
-    image: "751755577131.dkr.ecr.us-east-2.amazonaws.com/public-nameorigin"
+    image: "751755577131.dkr.ecr.us-east-2.amazonaws.com/public-nameorigin:latest"
     ports:
       - "5000:5000"
     volumes:
@@ -28,6 +28,13 @@ services:
       - POSTGRES_DB=mex_polit_db
     ports:
       - '5432:5432'
+    logging:
+      driver: awslogs
+      options:
+        awslogs-group: ecs-log-streaming
+        awslogs-region: us-east-2
+        awslogs-stream-prefix: postgres-logs
+      
     volumes: 
       - postgresVol:/var/lib/postgresql/data 
       # - ./database/init.sql/:/docker-entrypoint-initdb.d/create_tables.sql
