@@ -12,11 +12,12 @@ def create_app(object_name):
     from GoberApi.controllers import GoberApi_blueprint
     from views.controller.controller import views_blueprint
 
-    from NameApi.models import FullNameModel, PartialNameModel
-    from GoberApi.models import GobernadoresMexicoModel, EstadosMexicoModel
-
     app = Flask(__name__)
     app.config.from_object(object_name)
+
+    from NameApi import models
+    from GoberApi import models
+
     db.init_app(app)
     migrate.init_app(app, db)
     app.register_blueprint(NameApi_blueprint)

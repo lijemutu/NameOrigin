@@ -37,6 +37,7 @@ def ParserGoberInfo(html_text: str):
 
 
 def SaveGoberInfo(gober_list_dict: list):
+    # TODO If exist the record do not add it to db
     for gober in gober_list_dict:
         goberModel = models.GobernadoresMexicoModel(gober["estado"],
                                                     gober["nombre"])

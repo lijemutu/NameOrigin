@@ -243,8 +243,8 @@ class NamesApi:
         if typeName == "surname":
             name = self.lastName
 
-        foundUser: FullNameModel.PartialNameModel = (
-            FullNameModel.PartialNameModel.query.filter_by(
+        foundUser: PartialNameModel = (
+            PartialNameModel.query.filter_by(
                 name=name, typeName=typeName
             ).first()
         )
@@ -285,7 +285,7 @@ class NamesApi:
         name = data["name"]
         type = data["type"]
         countries = data["countries"]
-        partialNameModel = FullNameModel.PartialNameModel(
+        partialNameModel = PartialNameModel(
             name=name, typeName=type, countries=countries
         )
         db.session.add(partialNameModel)
