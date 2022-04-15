@@ -37,12 +37,21 @@ def ParserGoberInfo(html_text: str):
 
 
 def SaveGoberInfo(gober_list_dict: list):
-    # TODO If exist the record do not add it to db
     for gober in gober_list_dict:
-        goberModel = models.GobernadoresMexicoModel(gober["estado"],
-                                                    gober["nombre"])
-        estadoModel = models.EstadosMexicoModel(estado=gober["estado"])
-        goberModel.estado.append(estadoModel)
-        db.session.add(goberModel)
-        db.session.add(estadoModel)
-    db.session.commit()
+
+        # Creates object to get the name reflected in table
+        initGober = models.GobernadoresMexicoModel(
+                gober["estado"], gober["nombre"]
+            )
+        searchedGober = models.GobernadoresMexicoModel.query.filter_by(
+            nombres=initGober.nombres
+        ).first()
+        if searchedGober is None:
+            goberModel = models.GobernadoresMexicoModel(
+                gober["estado"], gober["nombre"]
+            )
+            estadoModel = models.EstadosMexicoModel(estado=gober["estado"])
+            goberModel.estado.append(estadoModel)
+            db.session.add(estadoModel)
+            db.session.add(goberModel)
+            db.session.commit()
