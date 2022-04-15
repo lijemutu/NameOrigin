@@ -32,21 +32,44 @@
 
     <h2>Origen de un nombre en particular</h2>
     <p>Aquí puedes escribir un nombre y se te mostrará la información de un nombre en particular.</p>
-    <form action="" method="GET">
+    <form action="" method="GET" id="fullname">
         <label for="fn">Nombre(s):</label><br>
         <input type="text" id="fn" name="fn"><br>
         <label for="sn">Primer apellido:</label><br>
         <input type="text" id="sn" name="sn"><br>
         <label for="ssn">Segundo apellido:</label><br>
         <input type="text" id="ssn" name="ssn"><br>
-        <input type="submit" value="Submit" onclick="getNationality();"><br>
+        <input type="submit" value="Submit" ><br>
     </form>
 
-    <table class="resultTable">
+    <table class="resultTableFullName">
         <tr>
             <th>Nombre</th>
             <th>País de Origen</th>
             <th>Porcentaje</th>
+        </tr>
+    </table>
+
+
+    
+    <h2>Origen de un apellido particular</h2>
+    <p>Aquí puedes escribir un apellido o un nombre en particular.</p>
+    <form action="" method="GET" id="lastname">
+        <label for="name">Nombre(s):</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="type">Es Nombre o Apellido?:</label><br>
+        <select id="type" name="type">
+            <option value="forename">Nombre propio</option>
+            <option value="surname">Apellido</option>
+        </select><br>
+        <input type="submit" value="Submit" ><br>
+    </form>
+
+    <table class="resultTablePartialName">
+        <tr>
+            <th>Nombre</th>
+            <th>País de Origen</th>
+            <th>Incidencia</th>
         </tr>
     </table>
 </body>

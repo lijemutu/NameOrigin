@@ -1,5 +1,38 @@
 $(document).ready(function () {
-  $("form").submit(function (event) {
+  $("#lastname").submit(function (event) {
+    var formData = {
+      name: $("#name").val(),
+      type: $("#type").val(),
+    };
+
+    $.ajax({
+      type: "GET",
+      url: "/NameApi/partialname",
+      data: formData,
+    }).done(function (data) {
+      console.log(data);
+      var countries = data.countries;
+      countries.forEach((country) =>
+        $(".resultTablePartialName").append(
+          "<tr>" +
+            "<td>" +
+            data.name +
+            "</td>" +
+            "<td>" +
+            country.jurisdiction +
+            "</td>" +
+            "<td>" +
+            country.incidence +
+            "</td>" +
+            "</tr>"
+        )
+      );
+    });
+
+    event.preventDefault();
+  });
+
+  $("#fullname").submit(function (event) {
     var formData = {
       fn: $("#fn").val(),
       sn: $("#sn").val(),
@@ -17,7 +50,7 @@ $(document).ready(function () {
       var countries = data.countries;
       if (data.hasOwnProperty("secondSurname")) {
         countries.forEach((country) =>
-          $(".resultTable").append(
+          $(".resultTableFullName").append(
             "<tr>" +
               "<td>" +
               name +
@@ -37,7 +70,7 @@ $(document).ready(function () {
         );
       } else {
         countries.forEach((country) =>
-          $(".resultTable").append(
+          $(".resultTableFullName").append(
             "<tr>" +
               "<td>" +
               name +
@@ -58,4 +91,6 @@ $(document).ready(function () {
 
     event.preventDefault();
   });
+
 });
+
