@@ -4,6 +4,11 @@ from .models import NamesApi
 NameApi_blueprint = Blueprint("NameApi", __name__, url_prefix="/NameApi")
 
 
+@NameApi_blueprint.route("/healthcheck", methods=["GET"])
+def HealthCheck():
+    return "Ok", 200
+
+
 @NameApi_blueprint.route("/name", methods=["GET"])
 def NameNationality():
     args = request.args
@@ -68,8 +73,7 @@ def PartialNameLocation():
     return locations, 200
 
 
-def NameNationalityInternal(firstname: str, surname: str,
-                            secondsurname: str = ""):
+def NameNationalityInternal(firstname: str, surname: str, secondsurname: str = ""):
 
     nameObject = NamesApi(firstname, surname, secondLastName=secondsurname)
 
