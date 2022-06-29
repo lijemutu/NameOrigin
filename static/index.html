@@ -3,75 +3,135 @@
 
 <head lang="en">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mapa de gobernadores</title>
     <!-- Import Plotly (does not have to be from CDN) -->
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="{{
+        url_for('static', filename = 'styles.css') }}">
     <script>window.jQuery || document.write('<script src="{{
   url_for('static', filename = 'jquery.js') }}">\x3C/script>')</script>
     <script src="{{ url_for('static',filename='form.js') }}"></script>
 </head>
 
 <body>
-    <h1>Mapa de gobernantes de México</h1>
-    <p>Mapa presentando los estados de México con su respectivo gobernador y el órigen de cada nombre, representado con
-        colores.</p>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-
-                <div class="chart" id="bargraph">
-                    <script>
-                        var graphs = {{plot | safe}};
-                        Plotly.plot('bargraph', graphs, {});
-                    </script>
+    <div>
+        <!-- Header -->
+        <section class="hero is-warning is-medium">
+            
+            <div class="container hero-body has-text-centered">
+                <h1 class="title is-1">Mapa de gobernantes de México</h1>
+                <h2 class="subtitle">Mapa presentando los estados de México con su respectivo gobernador y el órigen de cada nombre, representado con
+                    colores.</h2>
+                
+            </div>
+        </section>
+        <br>
+        <!-- Graph -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="chart" id="bargraph">
+                        <script>
+                            var graphs = {{plot | safe}};
+                            Plotly.plot('bargraph', graphs, {});
+                        </script>
+                    </div>
                 </div>
             </div>
         </div>
+        <br>
+        <!-- First form and table -->
+        <section class="section">
+            
+            <div class="container">
+                <h2 class="title">Origen de un nombre en particular</h2>
+                <h3 class="subtitle">Aquí puedes escribir un nombre y se te mostrará la información de un nombre en particular.</h3>
+                <form action="" method="GET" id="fullname">
+                    <div class="field">
+                        <label class="label" for="fn">Nombre(s):</label>
+                        <div class="control">
+                            <input class="input" type="text" id="fn" name="fn" placeholder="Eg. Andrés Manuel">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label" for="sn">Primer apellido:</label>
+                        <div class="control "><input class="input" type="text" id="sn" name="sn" placeholder="Eg. López"></div>
+                    </div>
+                    <div class="field">
+                        <label class="label" for="ssn">Segundo apellido:</label>
+                        <div class="control"><input class="input" type="text" id="ssn" name="ssn" placeholder="Eg. Obrador"></div>
+                    </div>
+                    <div class="control"><input class="button is-link" type="submit" value="Buscar" ></div>
+                </form>
+                
+                <div class="table-container">
+                    <table class="resultTableFullName table is-hoverable is-fullwidth">
+                        <tr>
+                            <th>Nombre</th>
+                            <th>País de Origen</th>
+                            <th>Porcentaje</th>
+                        </tr>
+                    </table>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- First form and table -->
+        <section class="section">
+            <div class="container">
+                <h2 class="title">Origen de un apellido particular</h2>
+                <h3 class="subtitle">Aquí puedes escribir un apellido o un nombre en particular.</h3>
+
+                <form action="" method="GET" id="lastname">
+
+                    <div class="field">
+                        <label class="label" for="name">Nombre(s):</label>
+                        <div class="control"><input class="input" type="text" id="name" name="name" placeholder="Sheinbaum"></div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label" for="type">Es Nombre o Apellido?:</label>
+                        <div class="control">
+                            <div class="select">
+                                <select id="type" name="type">
+                                    <option value="forename">Nombre propio</option>
+                                    <option value="surname">Apellido</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="control">
+                        <input class="button is-link" type="submit" value="Buscar">
+                    </div>
+                </form>
+
+                <div class="table-container">    
+                    <table class="resultTablePartialName table is-hoverable is-fullwidth">
+                        <tr>
+                            <th>Nombre</th>
+                            <th>País de Origen</th>
+                            <th>Incidencia</th>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="content has-text-centered">
+              <p>
+                <strong>Mapa de gobernantes de México</strong> realizado por ...</a>
+              </p>
+            </div>
+          </footer>
     </div>
-
-    <h2>Origen de un nombre en particular</h2>
-    <p>Aquí puedes escribir un nombre y se te mostrará la información de un nombre en particular.</p>
-    <form action="" method="GET" id="fullname">
-        <label for="fn">Nombre(s):</label><br>
-        <input type="text" id="fn" name="fn"><br>
-        <label for="sn">Primer apellido:</label><br>
-        <input type="text" id="sn" name="sn"><br>
-        <label for="ssn">Segundo apellido:</label><br>
-        <input type="text" id="ssn" name="ssn"><br>
-        <input type="submit" value="Submit" ><br>
-    </form>
-
-    <table class="resultTableFullName">
-        <tr>
-            <th>Nombre</th>
-            <th>País de Origen</th>
-            <th>Porcentaje</th>
-        </tr>
-    </table>
-
-
-    
-    <h2>Origen de un apellido particular</h2>
-    <p>Aquí puedes escribir un apellido o un nombre en particular.</p>
-    <form action="" method="GET" id="lastname">
-        <label for="name">Nombre(s):</label><br>
-        <input type="text" id="name" name="name"><br>
-        <label for="type">Es Nombre o Apellido?:</label><br>
-        <select id="type" name="type">
-            <option value="forename">Nombre propio</option>
-            <option value="surname">Apellido</option>
-        </select><br>
-        <input type="submit" value="Submit" ><br>
-    </form>
-
-    <table class="resultTablePartialName">
-        <tr>
-            <th>Nombre</th>
-            <th>País de Origen</th>
-            <th>Incidencia</th>
-        </tr>
-    </table>
 </body>
 
 </html>
