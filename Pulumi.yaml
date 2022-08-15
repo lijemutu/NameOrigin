@@ -1,0 +1,6 @@
+name: name-origin
+runtime:
+  name: python
+  options:
+    virtualenv: name-origin-env
+description: Name origin deploy to ec2 instance
