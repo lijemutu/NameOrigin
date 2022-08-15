@@ -1,13 +1,5 @@
-.vscode
-**/*.pyc
-/__pycache__/
-instance/
-.webassets-cache
-.env
-.venv
-env/
+*.pyc
 venv/
-ENV/
-env.bak/
-venv.bak/
-apikey.env
+.vscode/launch.json
+.vscode/settings.json
+__main__.py
