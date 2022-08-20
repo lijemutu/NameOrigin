@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY requirements.txt requirements.txt
 RUN apt-get update \
-    && apt-get -y install libpq-dev gcc build-essential
+    && apt-get -y install libpq-dev gcc build-essential iputils-ping
 RUN pip3 install --upgrade pip
 RUN pip3 install -r requirements.txt
 RUN pip3 install gunicorn
