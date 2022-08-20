@@ -18,7 +18,7 @@ services:
       - APIAPP_ENV=prod
       # - API_KEY_NAMES=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa # create a apikey.env file with your api key or uncomment with your key
     depends_on:
-      - postgres:
+      - postgres
     restart: on-failure
   postgres:
     image: postgres:14.1-alpine
