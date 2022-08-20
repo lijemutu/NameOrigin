@@ -18,7 +18,8 @@ services:
       - APIAPP_ENV=prod
       # - API_KEY_NAMES=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa # create a apikey.env file with your api key or uncomment with your key
     depends_on:
-      - postgres
+      - postgres:
+        condition: service_healthy
   postgres:
     image: postgres:14.1-alpine
     restart: always
@@ -31,6 +32,11 @@ services:
     volumes:
       - postgres:/var/lib/postgresql/data
       - ./database/init.sql/:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
 volumes:
   postgres:
     driver: local
